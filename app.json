@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "ndzy-app-01",
-    "slug": "ndzy-app-01",
+    "slug": "ndzy-app-todo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -19,7 +19,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.ndzy01.ndzyapptodo"
     },
     "web": {
       "output": "static",
@@ -43,6 +44,13 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
-    }
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0798032e-17b8-4f33-8c77-53205d24dae5"
+      }
+    },
+    "owner": "ndzy01"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "ndzy-app-01",
+  "name": "ndzy-app-todo",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "scripts": {
