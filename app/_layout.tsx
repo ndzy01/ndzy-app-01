@@ -23,7 +23,7 @@ export default function RootLayout() {
             name="add-todo" 
             options={{ 
               presentation: 'modal', 
-              headerShown: false,
+              // headerShown: false,
               title: '新建任务'
             }} 
           />
@@ -31,7 +31,7 @@ export default function RootLayout() {
             name="edit-todo/[id]" 
             options={{ 
               presentation: 'modal',
-              headerShown: false,
+              // headerShown: false,
               title: '编辑任务'
             }} 
           />
