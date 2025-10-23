@@ -26,6 +26,8 @@ export interface UpdateTodoInput {
 export interface TodoFilters {
   searchText?: string;
   completed?: boolean;
+  dateFrom?: string;  // YYYY-MM-DD 格式
+  dateTo?: string;    // YYYY-MM-DD 格式
 }
 
 // 数据库操作返回类型

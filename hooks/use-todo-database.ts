@@ -67,6 +67,17 @@ export const useTodoDatabase = () => {
         params.push(searchPattern, searchPattern);
       }
 
+      // 添加日期范围筛选
+      if (filters?.dateFrom) {
+        conditions.push('DATE(created_at) >= ?');
+        params.push(filters.dateFrom);
+      }
+
+      if (filters?.dateTo) {
+        conditions.push('DATE(created_at) <= ?');
+        params.push(filters.dateTo);
+      }
+
       if (conditions.length > 0) {
         query += ' WHERE ' + conditions.join(' AND ');
       }
